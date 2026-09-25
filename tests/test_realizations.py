@@ -59,4 +59,4 @@ def test_p3_target_is_minus_frozen_not_plus_surplus():
     p = condensing_params()
     assert p3_target_delta(p) == pytest.approx(-p.abs_epsilon_star)
     assert p1_surplus_delta(p) == pytest.approx(p.abs_epsilon_star)
-    assert p3_target_delta(p) != pytest.approx(p1_surplus_delta(p)
+    assert p3_target_delta(p) != pytest.approx(p1_surplus_delta(p))
