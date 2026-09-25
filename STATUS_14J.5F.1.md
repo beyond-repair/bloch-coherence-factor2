@@ -4,60 +4,56 @@
 **Branch.** `14J.5F.1-loop-correction`
 **Baseline.** `main` @ freeze of Theorems A–C
 
-## Order that is now enforced
+Read [LEDGER.md](LEDGER.md) first.
+
+## Order enforced
 
 \[
-\boxed{
 \text{CLASSICAL FREEZE}
 \;\rightarrow\;
 \text{PARENT-ACTION CONSISTENCY TEST}
 \;\rightarrow\;
 \text{QUANTIZATION}
-}
 \]
 
-A guessed tadpole is not an experiment on this branch.
-
-## Discovery that moved upstream
+## Closed on this branch
 
 \[
 \boxed{
-\text{The frozen classical pair is internally incompatible with a single local }\beta\phi^4\text{ parent action.}
+C1\text{--}C3:
+\quad
+\text{no independently defined action satisfies both P3 constraints.}
 }
 \]
-
-A local quartic cannot under-restore its own two-mode pair.
-On-shell, \(\Omega_-^2=0\), not \(\varepsilon_*/2\).
-
-## C1–C3 pass
-
-Protocol: [C_AUDIT.md](C_AUDIT.md).
-Calculations: [REALIZATION_C123.md](REALIZATION_C123.md).
 
 \[
 \boxed{
-\text{derived collective sector}
-\neq
-\text{reverse-engineered counterterm}.
+\varphi_{\rm loop}^2
+\text{ is presently undefined within the tested theory space.}
 }
 \]
-
-Named independently defined actions C1a, C1b, C2a, C2b, C3a, C3b, C3c
-are INDEPENDENT-FAIL. C1c is a COUNTERTERM. No INDEPENDENT-PASS.
 
 \[
 \boxed{
-\text{No admissible parent identified in this pass}
-\;\Rightarrow\;
-\text{loop experiment remains undefined}.
+\text{The factor-of-two discrepancy has not been demonstrated to be quantum.}
 }
 \]
 
-P3 is still a conditional possibility, not a result. No parent is selected.
+Not “loop correction = unknown.” There is no parent in the
+tested space from which to compute one.
+
+## C4+ rule
+
+[CLOSURE_CRITERION.md](CLOSURE_CRITERION.md): a new realization
+is admissible only if field content, symmetry, coupling, and
+action are specified independently of the frozen Hessian.
+Then \(E_{\rm extra}=0\), \(H_{\rm extra}=-V_{\rm fluc}^{\rm fr}\),
+then the five-question gate.
 
 ## Still absent
 
 - no \(\varphi_{\rm loop}^2\)
 - no guessed tadpole
+- no parent selected
 - no edit to Theorems A–C on `main`
-- no promotion of \(2\) to a constant of nature
+- no promotion of 2 to a constant of nature
