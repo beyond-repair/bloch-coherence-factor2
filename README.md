@@ -128,6 +128,8 @@ bloch-coherence-factor2/
 ├── NUMERICS.md
 ├── INTERPRETATION_FORK.md
 ├── LOOP_CORRECTION.md          # 14J.5F.1 protocol only
+├── LINE_FREEZE.md              # classical theorem ≠ loop ≠ propulsion
+├── CLAIM_STATUS.md             # claim cap; not a claim-level raise
 ├── src/bloch_factor2/
 ├── tests/test_factor2.py
 └── data/
