@@ -7,6 +7,8 @@ src/bloch_factor2/model.py      K(q), ε_*, amplitudes
 src/bloch_factor2/operator.py   two-mode + N-mode Bloch
 src/bloch_factor2/scan.py       R scan, parameter grid
 tests/test_factor2.py           assertions
+tests/test_cli.py               CLI exit codes and output
+src/bloch_factor2/__main__.py   bloch-factor2 command
 ```
 
 No external physics library. NumPy + pytest only.
@@ -58,4 +60,10 @@ Optional one-shot scan:
 
 ```bash
 PYTHONPATH=src python -m bloch_factor2
+```
+
+Any other condensing point, after `pip install -e ".[test]"`:
+
+```bash
+bloch-factor2 --W 0.8 --lam 2 --M 1.5 --c 0.5 --mu 0.2 --n-max 6 --json
 ```

@@ -5,6 +5,8 @@ and the associated Bloch operator. It does not import CFT-X parameters,
 Ware-constant phenomenology, thrust models, or loop corrections.
 """
 
+__version__ = "0.1.1"
+
 from .model import ModelParams, saddle_amplitude_sq, stability_amplitude_sq
 from .operator import (
     bloch_matrix,
@@ -14,6 +16,7 @@ from .operator import (
 from .scan import ratio_scan
 
 __all__ = [
+    "__version__",
     "ModelParams",
     "saddle_amplitude_sq",
     "stability_amplitude_sq",
