@@ -132,6 +132,7 @@ bloch-coherence-factor2/
 ├── CLAIM_STATUS.md             # claim cap; not a claim-level raise
 ├── src/bloch_factor2/
 ├── tests/test_factor2.py
+├── tests/test_cli.py
 └── data/
 ```
 
@@ -150,7 +151,25 @@ truncated multimode Bloch operator it is an empirical question: if
 higher modes move \(R\) off 2, the suite reports the drift instead of
 redefining the theorem.
 
-Run:
+Run (Python 3.10+):
+
+```bash
+git clone https://github.com/beyond-repair/bloch-coherence-factor2
+cd bloch-coherence-factor2
+python3 -m venv .venv && . .venv/bin/activate
+pip install -e ".[test]"
+python -m pytest            # falsification suite
+bloch-factor2               # one-shot scan at W=λ=M=c=1, μ=0 (9 modes)
+bloch-factor2 --W 0.8 --lam 2 --M 1.5 --c 0.5 --mu 0.2 --n-max 6 --json
+```
+
+`python -m bloch_factor2` is the same command. Exit code 0 means the
+analytic two-mode ratio is 2; 1 means it moved off 2 (the identity
+broke); 2 means bad input, for example ε\_\* ≥ 0 (no classical
+condensate); 3 means the multimode bisection could not bracket
+stability. `R_numeric` is the truncated multimode value and is reported,
+not forced to 2. The old no-install path still works and is what CI
+runs:
 
 ```bash
 pip install -r requirements.txt
